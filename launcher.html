@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Bedrock GUI Launcher</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .launcher {
+      background: #2b2b2b;
+      padding: 30px;
+      border-radius: 12px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .launcher h1 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #3c8d0d;
+      color: #fff;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #46a612;
+    }
+
+    .settings-btn {
+      background: #0078d4;
+    }
+
+    .settings-btn:hover {
+      background: #0a89e6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="launcher">
+    <h1>Minecraft Bedrock Launcher</h1>
+
+    <button onclick="location.href='minecraft://mode/?action=play';">
+      Bedrock を起動する
+    </button>
+
+    <button onclick="location.href='minecraft://mode/?action=marketplace';">
+      マーケットプレイスを開く
+    </button>
+
+    <button onclick="location.href='minecraft://mode/?action=createWorld';">
+      新しいワールドを作成する
+    </button>
+
+    <button class="settings-btn" onclick="location.href='minecraft://mode/?action=settings';">
+      設定を開く
+    </button>
+  </div>
+
+</body>
+</html>
